@@ -11,12 +11,13 @@ const Navbar = () => {
         
         <div class='nav-link title'>0xAspect <HiCube className="icon" /></div>
         <ul class="nav-menu">
+          <li class='nav-link'>About Me</li>
           <li class='nav-link'>Projects</li>
-          <li class='nav-link'>About me</li>
+          <li class='nav-link'>Links</li>
           <li class='nav-link'>Contact</li>
+
         </ul>
         <div class ="bars"><FaBars className='burger-menu' /></div>
-
       </nav>
     </>
   );
