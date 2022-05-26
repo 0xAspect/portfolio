@@ -1,3 +1,5 @@
-Portfolio website- built in React
+Developer Portfolio website
 
-Documentation to follow 
+built in React.js
+
+Readme to follow 
