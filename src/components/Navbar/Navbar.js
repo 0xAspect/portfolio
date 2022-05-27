@@ -14,11 +14,6 @@ const Navbar = () => {
     setExpand(true)
     setTimeout(()=> setExpand(false), 100)
   }
-  const handleClose = () => {
-
-  
-  }
-  console.log(expand)
 
   return (
     <>
