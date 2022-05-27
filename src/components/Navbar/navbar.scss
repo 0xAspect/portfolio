@@ -10,7 +10,6 @@
 
 .nav-link {
   text-decoration: none;
-
   color: #023020;
   display: flex;
   align-items: center;
@@ -20,6 +19,20 @@
   cursor: pointer;
   &:hover {
     color:#034694;
+}
+
+.nav-link-external {
+  text-decoration: none;
+  color: #034694;
+  display: flex;
+  align-items: center;
+  font-size: 0.5rem;
+  padding: 0 1rem;
+  height: 80%;
+  cursor: pointer;
+  &:hover {
+    color:#034694;
+  }
 }
 }
 .bars {
@@ -63,5 +76,13 @@
   // color: #034694;
     &:hover {
     color:#034694;
+  }
+}
+.icon-external {
+  font-size: 2.8rem;
+  padding-left: 10px;
+  color: #034694;
+    &:hover {
+    color:#023020;
   }
 }

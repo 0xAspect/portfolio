@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from "./navbar.scss";
 import { FaBars } from 'react-icons/fa';
 import { HiCubeTransparent as HiCube } from 'react-icons/hi';
+import {GrTwitter, GrGithub} from "react-icons/gr";
 import { NavLink } from "react-router-dom";
 
 
@@ -21,7 +22,8 @@ const Navbar = () => {
           <NavLink className="nav-link" to="/">About Me</NavLink>
           <NavLink className="nav-link" to="/projects">Projects</NavLink>
           <NavLink className="nav-link" to="/contact">Contact</NavLink>
-          <li class='nav-link'>Links</li>
+          <a href= "https://github.com/0xAspect"class='nav-link-external'><GrGithub className="icon-external"/></a>
+          <a href="https://twitter.com/Aspect0x" class='nav-link-external'><GrTwitter className="icon-external"/></a>
         </div>
         <div class ="bars" onClick={handleClick}><FaBars className='burger-menu' /></div>
       </nav>
