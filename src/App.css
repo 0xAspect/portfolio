@@ -1,4 +1,4 @@
-@font-face { font-family: fut; font-weight: light; src: url('./fonts/futPt.ttf');}
+@font-face { font-family: fut; font-weight: bold; src: url('./fonts/futPt.ttf');}
 
 * {
   box-sizing: border-box;
