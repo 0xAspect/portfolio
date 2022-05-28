@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from "./navbar.scss";
+import  "./navbar.scss";
 import { FaBars } from 'react-icons/fa';
 import { HiCubeTransparent as HiCube } from 'react-icons/hi';
 import {GrTwitter, GrGithub} from "react-icons/gr";
@@ -10,9 +10,8 @@ import Sidebar from '../Sidebar/Sidebar';
 const Navbar = () => {
   const [expand, setExpand] = useState(false);
 
-  const handleClick = () => {
-    setExpand(true)
-    setTimeout(()=> setExpand(false), 100)
+  const toggle = () => {
+    setExpand(!expand)
   }
 
   return (
@@ -27,10 +26,10 @@ const Navbar = () => {
           <a href= "https://github.com/0xAspect"class='nav-link-external'><GrGithub className="icon-external"/></a>
           <a href="https://twitter.com/Aspect0x" class='nav-link-external'><GrTwitter className="icon-external"/></a>
         </div>
-        <div class ="bars" onClick={handleClick}><FaBars className='burger-menu' /></div>
+        <div class ="bars" onClick={toggle}><FaBars className='burger-menu' /></div>
         
       </nav>
-      <Sidebar expand={expand}></Sidebar> 
+      {expand === true && <Sidebar toggle={toggle}></Sidebar>}
     </>
   );
 };

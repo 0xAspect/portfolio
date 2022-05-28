@@ -1,6 +1,6 @@
 import React from 'react'
 import Video from '../../videos/video.mp4'
-import styles from "./home.scss"
+import  "./home.scss"
 
 const Home = () => {
   return (
@@ -12,11 +12,9 @@ const Home = () => {
           <h1 className='hero-h1'>Solidity/Web3.js Developer </h1>
           <p className='hero-p'>
             Passionate about Web3, NFT and DeFi with previous production-level smart contract building and deployment experience. 
-
           </p>
           <p className='hero-p'>Looking to move into the blockchain space full-time.</p>
         </div>
-
       </div>
   )
 }
