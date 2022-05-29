@@ -16,9 +16,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="nav">
+      <nav className="nav">
         
-        <div class='nav-link-title'>0xAspect <HiCube className="icon" /></div>
+        <NavLink to="/" className='nav-link-title'>0xAspect <HiCube className="icon" /></NavLink>
         <div class="nav-menu">
           <NavLink className="nav-link" to="/">About Me</NavLink>
           <NavLink className="nav-link" to="/projects">Projects</NavLink>
@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href= "https://github.com/0xAspect"class='nav-link-external'><GrGithub className="icon-external"/></a>
           <a href="https://twitter.com/Aspect0x" class='nav-link-external'><GrTwitter className="icon-external"/></a>
         </div>
-        <div class ="bars" onClick={toggle}><FaBars className='burger-menu' /></div>
+        <div className ="bars" onClick={toggle}><FaBars className='burger-menu' /></div>
         
       </nav>
       {expand === true && <Sidebar toggle={toggle}></Sidebar>}

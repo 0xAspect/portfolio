@@ -1,5 +1,8 @@
+$light: white;
+$dark: black;
+$tint: #034694;
 .nav {
-  background: black;
+  background: dark;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -10,7 +13,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: white;
+  color: $light;
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -18,14 +21,14 @@
   height: 100%;
   cursor: pointer;
   &:hover {
-    color:#034694;
+    color:tint;
   }
   font-smooth: always;
 
 }
 .nav-link-title {
   text-decoration: none;
-  color:white;
+  color: $light;
   display: flex;
   align-items: center;
   font-size: 1.8rem;
@@ -33,7 +36,7 @@
   height: 100%;
   cursor: pointer;
   &:hover {
-    color:#034694;
+    color:$tint;
   }
   font-smooth: antialiased;
   opacity: 75%;
@@ -42,7 +45,7 @@
 
 .nav-link-external {
   text-decoration: none;
-  color: #034694;
+  color: tint;
   display: flex;
   align-items: center;
   font-size: 0.5rem;
@@ -50,7 +53,7 @@
   height: 80%;
   cursor: pointer;
   &:hover {
-    color:#034694;
+    color:white;
   }
   font-smooth: auto;
 
@@ -85,9 +88,9 @@
   right: 0;
   transform: translate(-100%, 90%);
   font-size: 1.8rem;
-  color: white;
+  color: $light;
   &:hover {
-    color:#034694;
+    color:tint;
   }
   
 
@@ -95,16 +98,16 @@
 .icon {
   font-size: 3rem;
   padding-left: 10px;
-  // color: #034694;
+  // color: tint;
     &:hover {
-    color:#034694;
+    color:tint;
   }
 }
 .icon-external {
   font-size: 2.8rem;
   padding-left: 10px;
-  color: #034694;
+  color: tint;
     &:hover {
-    color:#023020;
+    color:white;
   }
 }
