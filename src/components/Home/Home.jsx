@@ -14,6 +14,8 @@ const Home = () => {
             Passionate about Web3, NFT and DeFi with previous production-level smart contract building and deployment experience. 
           </p>
           <p className='hero-p'>Looking to move into the blockchain space full-time.</p>
+          <div className='main-button'>Learn more</div>
+
         </div>
       </div>
   )

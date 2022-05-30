@@ -1,3 +1,4 @@
+$tint: #034694;
 .hero-container {
     display: flex;
     background: 0c0c0c;
@@ -73,4 +74,34 @@
 }
 body {
     background-color: black
+}
+
+.main-button {
+border-radius: 80px;
+background: $tint;
+white-space: nowrap;
+padding: 19px 48px;
+margin-top: 50px;
+margin-left: 30%;
+color: white;
+outline: none;
+border: none;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: top;
+width: 40%;
+transition:  all 0.2s ease-in-out;
+
+&:hover {
+    transition:  all 0.2s ease-in-out;
+    background-color: white;
+    color: $tint;
+}
+@media screen and (max-width: 768px){
+    width: 60%;
+    margin-left: 20%;
+
+}
+
 }
