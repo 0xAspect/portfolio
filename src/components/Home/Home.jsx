@@ -1,9 +1,11 @@
 import React from 'react'
 import Video from '../../videos/video.mp4'
 import  "./home.scss"
+import { Link as SLink, animateScroll as scroll } from "react-scroll";
 
 const Home = () => {
   return (
+    <>
     <div className='hero-container'>
       <div className='hero-bg'>
         <video className ="video-bg" autoPlay loop muted src ={Video} type='video/mp4' />
@@ -14,10 +16,13 @@ const Home = () => {
             Passionate about Web3, NFT and DeFi with previous production-level smart contract building and deployment experience. 
           </p>
           <p className='hero-p'>Looking to move into the blockchain space full-time.</p>
-          <div className='main-button'>Learn more</div>
-
+          <SLink     smooth={true}  duration={500} to= "section1" className='main-button'>Projects </SLink>
         </div>
       </div>
+      <div title="section1" id="section1" className="regular-container"> asdasd
+      </div>
+  
+      </>
   )
 }
 
