@@ -1,21 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import  "../home.scss"
+import { NavLink } from 'react-router-dom'
 
 const Preview = (props) => {
 
-let Background=props.bg
+let url = "/projects" + props.link;
 
 const bgStyle = {
-    backgroundImage: `url(${Background} )`,   backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'
+    backgroundImage: `url(${props.bg} )`,   
+    backgroundPosition: 'center',
+    backgroundSize: "130%",
+    backgroundRepeat: 'no-repeat',
 }
 
   return (
     <>
-    <li className='post-preview' style={bgStyle} ><a className='projects-text'>{props.title} </a>
+    <NavLink to={url}><li className='post-preview'  style={bgStyle} ><a className='projects-text'>{props.title} </a>
     </li>
-    
+    </NavLink>
   
       </>
   )

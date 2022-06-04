@@ -16,8 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="nav">
-        
+      <nav className="nav"> 
         <NavLink to="/" className='nav-link-title'>0xAspect <HiCube className="icon" /></NavLink>
         <div class="nav-menu">
           <NavLink className="nav-link" to="/">About Me</NavLink>

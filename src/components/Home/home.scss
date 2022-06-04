@@ -8,10 +8,13 @@ $tint: #034694;
     height: 800px;
     position: relative;
     z-index: 1;
-}
+    cursor: default;
 
+}
 .regular-container {
     display: flex;
+    cursor: default;
+
     background: $tint;
     justify-content: center;
     align-items: top;
@@ -143,34 +146,27 @@ font-size: larger;
 .post-preview {
     position: relative;
     float: left;
-
-    // display: flex;
     width: 10rem;
     height: 10rem;
     margin-left: 20px;
     margin-bottom: 20px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    border: thick;
     background-color: #2E3445;
     color: white;
     font-size: 20px;
     border-radius: 15%;
-    @media screen and (min-width: 768px){
+    @media screen {
         &:hover {
             transition:  all 0.1s ease-in-out;
             color: white;
             font-size: 22px;
-            width: 12rem;
-            height: 12rem;
+            transform: scale(1.1);
         }
     }
-   
     box-shadow: 7px 1px 2px 0 rgba(0,0,0,.2);
-
 }
 
 
@@ -204,4 +200,13 @@ font-size: larger;
     @media screen and (max-width: 768px){
         padding-top: 20%;
     }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
