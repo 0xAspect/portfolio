@@ -2,14 +2,15 @@ $light: white;
 $dark: black;
 $tint: #034694;
 .nav {
-  background: dark;
+  background: $dark;
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
-  z-Index: 10;
+  z-Index: 999;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-  
+  position: sticky;
+  top: 0;
 
 }
 

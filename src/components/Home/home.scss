@@ -116,3 +116,22 @@ font-size: larger;
 }
 
 }
+.category-preview, .archive-preview {
+    text-align: center;
+    list-style: none;
+    margin-left: 0;
+}
+
+.projects-h1 {
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    
+    @media screen and (max-width: 768px){
+        font-size: 40px
+    }
+    @media screen and (max-width: 480px){
+        font-size: 32px
+    }
+
+}
