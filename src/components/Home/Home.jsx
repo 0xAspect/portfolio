@@ -2,7 +2,10 @@ import React from 'react'
 import Video from '../../videos/video.mp4'
 import  "./home.scss"
 import { Link as SLink, animateScroll as scroll } from "react-scroll";
-
+import Preview from './Preview/Preview';
+import mintImg from "../../images/7.jpg"
+import farmImg from "../../images/trinket.png"
+import stakeImg from "../../images/cheese.png"
 const Home = () => {
 
   
@@ -22,11 +25,17 @@ const Home = () => {
         </div>
       </div>
       <div title="section1" id="section1" className="regular-container"> 
-      <div className='hero-content'><h1 className='projects-h1'> Solidity </h1>
-      <div className='category-preview'> asndaskdaskdas</div>
-        <h1 className='projects-h1'> React/Web3.js </h1>
+      <div className='projects-content'><h1 className='projects-h1'> Solidity </h1>
+      <p className='projects-p'>Live deployed contracts on Avalanche mainnet and on-going projects:</p>
+      <ul className='category-preview'> 
+          <Preview title = "Avax Nibblers Minting Contract" link = "/nibblers-minting" bg = {mintImg}></Preview>
+          <Preview title = "Avax Nibblers Farming Contract" link = "/nibblers-minting" bg = {farmImg}></Preview>
+          <Preview title = "Avax Nibblers Staking Contract" link = "/nibblers-minting" bg = {stakeImg}></Preview>
+          <Preview title = "RatDAO - work in progress" link = "/nibblers-minting" ></Preview>
 
-</div>
+
+      </ul>
+    </div>
 
       </div>
   

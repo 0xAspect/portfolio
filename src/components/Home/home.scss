@@ -12,13 +12,14 @@ $tint: #034694;
 
 .regular-container {
     display: flex;
-    background: white;
+    background: $tint;
     justify-content: center;
     align-items: top;
     padding: 0 30px;
     height: 800px;
     position: relative;
     z-index: 1;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzI4MjgyOCI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+CjxjaXJjbGUgY3g9IjEwLjUiIGN5PSIxMi41IiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTEuMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg==");
 }
 
 .hero-bg {
@@ -120,10 +121,13 @@ font-size: larger;
     text-align: center;
     list-style: none;
     margin-left: 0;
+    display: table;
+    height: 220px;
+    
 }
 
 .projects-h1 {
-    color: black;
+    color:white ;
     font-size: 48px;
     text-align: center;
     
@@ -134,4 +138,70 @@ font-size: larger;
         font-size: 32px
     }
 
+}
+
+.post-preview {
+    position: relative;
+    float: left;
+
+    // display: flex;
+    width: 10rem;
+    height: 10rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    border: thick;
+    background-color: #2E3445;
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+    @media screen and (min-width: 768px){
+        &:hover {
+            transition:  all 0.1s ease-in-out;
+            color: white;
+            font-size: 22px;
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+   
+    box-shadow: 7px 1px 2px 0 rgba(0,0,0,.2);
+
+}
+
+
+
+.projects-p {
+    margin-top: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+    font-size: 24px;
+    text-align: center;
+
+    @media screen and (max-width: 768px){
+        font-size: 24px
+    }
+    @media screen and (max-width: 480px){
+        font-size: 18px
+    }
+}
+
+.projects-content {
+    z-index: 3;
+    max-width: 1200px;
+    position: relative;
+    padding: 0px 24px;
+    padding-top: 50px;
+    display: position;
+    flex-direction: row;
+    align-items: top;
+
+    @media screen and (max-width: 768px){
+        padding-top: 20%;
+    }
 }
