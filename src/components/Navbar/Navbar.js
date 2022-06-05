@@ -15,11 +15,16 @@ const Navbar = () => {
     setExpand(!expand)
   }
 
+
+  //this could be better
   const projectsScroll = () => {
-    setTimeout(()=> scroller.scrollTo("projects", {smooth: true, duration: 500, offset: -50}))
+    setTimeout(()=> scroller.scrollTo("projects", {smooth: true, duration: 1000, offset: -50}))
   }
   const heroScroll = () => {
-    setTimeout(()=> scroller.scrollTo("hero", {smooth: true, duration: 500, offset: -80}))
+    setTimeout(()=> scroller.scrollTo("hero", {smooth: true, duration: 1000, offset: -80}))
+  }
+  const contactScroll = () => {
+    setTimeout(()=> scroller.scrollTo("contact", {smooth: true, duration: 1000, offset: -50}))
   }
 
 
@@ -30,14 +35,14 @@ const Navbar = () => {
         <div class="nav-menu">
         <NavLink className='nav-link'   to= "/" onClick={heroScroll}>About Me </NavLink>
         <NavLink className='nav-link'   to= "/" onClick={projectsScroll}>Projects </NavLink>
-        <NavLink className="nav-link" to="/contact">Contact</NavLink>
+        <NavLink className="nav-link" to="/"onClick={contactScroll}>Contact</NavLink>
           <a href= "https://github.com/0xAspect"class='nav-link-external'><GrGithub className="icon-external"/></a>
           <a href="https://twitter.com/Aspect0x" class='nav-link-external'><GrTwitter className="icon-external"/></a>
         </div>
         <div className ="bars" onClick={toggle}><FaBars className='burger-menu' /></div>
         
       </nav>
-      {expand === true && <Sidebar toggle={toggle} projectsScroll={projectsScroll} heroScroll={heroScroll}></Sidebar>}
+      {expand === true && <Sidebar toggle={toggle} projectsScroll={projectsScroll} heroScroll={heroScroll}contactScroll={contactScroll}></Sidebar>}
     </>
   );
 };

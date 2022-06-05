@@ -1,7 +1,7 @@
 import React from 'react'
 import Video from '../../../videos/video.mp4'
 import  "./hero.scss"
-import { Link as SLink, animateScroll as scroll } from "react-scroll";
+import { Link as SLink} from "react-scroll";
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
             Passionate about Web3, NFT and DeFi with previous production-level smart contract building and deployment experience. 
           </p>
           <p className='hero-p'>Looking to move into the blockchain space full-time.</p>
-          <SLink     smooth={true}  duration={500} to= "projects" className='main-button'>Projects </SLink>
+          <SLink     smooth={true}  offset={-70} duration={500} to= "projects" className='main-button'>Projects </SLink>
         </div>
       </div>
       </>

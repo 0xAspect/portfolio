@@ -24,8 +24,9 @@ const SideBar = (props) => {
       props.heroScroll();
     } else if (trigger === "Projects"){
       props.projectsScroll();
+    }  else if (trigger === "Contact"){
+      props.contactScroll();
     }
-    //add logic for contact
   }
 
   return (
@@ -36,7 +37,7 @@ const SideBar = (props) => {
       <div className='sidebar-nav-wrapper'  >
         <NavLink onClick={handleClick} className="sidebar-nav-link" to="/">About Me</NavLink>
         <NavLink onClick={handleClick}className="sidebar-nav-link" to="/">Projects</NavLink>
-        <NavLink onClick={props.toggle}className="sidebar-nav-link" to="/contact">Contact</NavLink>
+        <NavLink onClick={handleClick}className="sidebar-nav-link" to="/">Contact</NavLink>
         <a href= "https://github.com/0xAspect"class='sidebar-nav-link-external'><GrGithub className="sidebar-icon-external"/></a>
         <a href="https://twitter.com/Aspect0x" class='sidebar-nav-link-external'><GrTwitter className="sidebar-icon-external"/></a>
       </div>
