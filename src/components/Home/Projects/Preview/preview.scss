@@ -1,0 +1,27 @@
+.post-preview {
+    float: left;
+    width: 10rem;
+    height: 10rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background-color: #2E3445;
+    color: white;
+    font-size: 20px;
+    border-radius: 15%;
+    background-position: center;
+    background-size: 130%;
+    
+    @media screen {
+        &:hover {
+            transition:  all 0.1s ease-in-out;
+            color: white;
+            font-size: 22px;
+            transform: scale(1.1);
+        }
+    }
+    box-shadow: 7px 1px 2px 0 rgba(0,0,0,.2);
+}
