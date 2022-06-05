@@ -9,7 +9,7 @@ export class Projects extends Component {
   render() {
     return (
       <>
-        <div title="section1" id="section1" className="regular-container"> 
+        <div title="section1" id="projects" hash="projects" className="regular-container"> 
             <div className='projects-content'>
                 <h1 className='projects-h1'> Solidity </h1>
                 <hr/>

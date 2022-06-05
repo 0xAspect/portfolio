@@ -13,19 +13,29 @@ const SideBar = (props) => {
       props.toggle()
     } 
   }
-
   useEffect(() => {
     window.addEventListener("resize", handleResize)
   });   
+
+  const handleClick = (event) => {
+    const trigger = event.target.innerText;
+    props.toggle();
+    if (trigger === "About Me"){
+      props.heroScroll();
+    } else if (trigger === "Projects"){
+      props.projectsScroll();
+    }
+    //add logic for contact
+  }
 
   return (
     <div className='sidebar-container'>
       <div className='sidebar-nav-title'>
       <NavLink to="/"  onClick={props.toggle} className='sidebar-nav-title' >0xAspect <HiCube className="sidebar-title-icon" /></NavLink>
       </div>
-      <div className='sidebar-nav-wrapper' >
-        <NavLink onClick={props.toggle}className="sidebar-nav-link" to="/">About Me</NavLink>
-        <NavLink onClick={props.toggle}className="sidebar-nav-link" to="/projects">Projects</NavLink>
+      <div className='sidebar-nav-wrapper'  >
+        <NavLink onClick={handleClick} className="sidebar-nav-link" to="/">About Me</NavLink>
+        <NavLink onClick={handleClick}className="sidebar-nav-link" to="/">Projects</NavLink>
         <NavLink onClick={props.toggle}className="sidebar-nav-link" to="/contact">Contact</NavLink>
         <a href= "https://github.com/0xAspect"class='sidebar-nav-link-external'><GrGithub className="sidebar-icon-external"/></a>
         <a href="https://twitter.com/Aspect0x" class='sidebar-nav-link-external'><GrTwitter className="sidebar-icon-external"/></a>

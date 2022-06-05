@@ -45,6 +45,9 @@ display: none;
     &:hover {
       color:#034694;
     }
+    @media screen and (max-height: 390px) {
+      margin-top: 5%;
+    }
 
 }
 .sidebar-close-icon {

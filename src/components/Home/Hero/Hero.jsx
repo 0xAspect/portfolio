@@ -6,7 +6,7 @@ import { Link as SLink, animateScroll as scroll } from "react-scroll";
 const Hero = () => {
   return (
     <>
-    <div className='hero-container'>
+    <div className='hero-container'id="hero" >
       <div className='hero-bg'>
         <video className ="video-bg" autoPlay loop muted src ={Video} type='video/mp4' />
         </div>
@@ -16,7 +16,7 @@ const Hero = () => {
             Passionate about Web3, NFT and DeFi with previous production-level smart contract building and deployment experience. 
           </p>
           <p className='hero-p'>Looking to move into the blockchain space full-time.</p>
-          <SLink     smooth={true}  duration={500} to= "section1" className='main-button'>Projects </SLink>
+          <SLink     smooth={true}  duration={500} to= "projects" className='main-button'>Projects </SLink>
         </div>
       </div>
       </>
