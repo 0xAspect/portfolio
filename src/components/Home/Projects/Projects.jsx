@@ -3,6 +3,7 @@ import Preview from './Preview/Preview.jsx';
 import mintImg from "../../../images/7.jpg"
 import farmImg from "../../../images/trinket.png"
 import stakeImg from "../../../images/cheese.png"
+import {Link as SLink} from "react-scroll"
 import "./projects.scss"
 
 export class Projects extends Component {
@@ -11,7 +12,7 @@ export class Projects extends Component {
       <>
         <div title="section1" id="projects" hash="projects" className="regular-container"> 
             <div className='projects-content'>
-                <h1 className='projects-h1'> Solidity </h1>
+                <h1 className='projects-h1'> Solidity projects </h1>
                 <hr/>
                 <p className='projects-p'>Live deployed contracts on Avalanche mainnet and on-going projects:</p>
                 <ul className='category-preview'> 
@@ -21,7 +22,21 @@ export class Projects extends Component {
                     <Preview title = "RatDAO - work in progress" link = "/rat-dao" ></Preview>
                 </ul>
             </div>
+            <div className='projects-content' style={{paddingTop: "0px"}}>
+                <h1 className='projects-h1'> React.js/Web3.js and other projects </h1>
+                <hr/>
+                <p className='projects-p'>live and in-development react/web3.js projects:</p>
+                <ul className='category-preview'> 
+                    <Preview title = "Avax Nibblers Metadata" link = "/nibblers-meta" bg = {mintImg}></Preview>
+                    <Preview title = "0x Aspect Portfolio website" link = "/nibblers-farming" bg = {farmImg}></Preview>
+                    <Preview title = "blockSimple" link = "/rat-dao" ></Preview>
+                </ul>
+                <SLink     smooth={true}  offset={-70} duration={500} to= "contact" className='contact-button'>Contact </SLink>
+
+            </div>
+
         </div>
+
       </>
     )
   }

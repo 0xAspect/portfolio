@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="nav"> 
-        <NavLink to="/" className='nav-link-title'>0xAspect <HiCube className="icon" /></NavLink>
+        <NavLink to="/" className='nav-link-title' onClick={heroScroll}>0xAspect <HiCube className="icon" /></NavLink>
         <div class="nav-menu">
         <NavLink className='nav-link'   to= "/" onClick={heroScroll}>About Me </NavLink>
         <NavLink className='nav-link'   to= "/" onClick={projectsScroll}>Projects </NavLink>
