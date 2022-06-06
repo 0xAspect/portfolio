@@ -7,23 +7,34 @@ body {
 }
 .display-container {
     height: 600px;
-    width: 100%;
+    width: 80%;
     color: white;
-    max-width: 90%;
     margin-right: auto;
     margin-left: auto;
     padding: 1rem;
     // border: solid;
-
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+    }
 }
 .display-img {
 
 }
 .display-title-container {
     display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        margin-right: 0px;
+      }
+
 }
 .display-title {
     font-size: 40px;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+      }
 }
 .live-symbol {
     float:right;
@@ -34,7 +45,7 @@ body {
 }
 .header-link {
     text-decoration: none;
-    margin-left: 5px;
+    margin-left: 25px;
     font-size: 20px;
     text-align: center;
     align-items: center;
@@ -42,13 +53,21 @@ body {
 
     &:hover {
         color: $tint;
-        text-transform: uppercase;
     }
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+        margin-left: 10px;
+
+      }
 }
 
 .display-tech {
     display:flex;
     list-style: none;
+    max-width: 100%;
+    @media screen and (max-width: 768px) {
+        display: wrap;
+    }
 }
 .display-tech-item {
     margin-left: 10px;
@@ -71,7 +90,30 @@ body {
     opacity: 90%;
     margin: 25px 10px;
     border: 3px solid $tint;
+    border-radius: 25px;
+
     &:hover {
         opacity: 100%;
     }
+    @media screen and (max-width: 768px) {
+        width: 100px;
+        margin: 20px 5px;
+
+    }
+  }
+
+  .description-p {
+      max-width: 80%;
+      font-size: 18px;
+      margin-bottom: 5px;
+      @media screen and (max-width: 768px) { max-width: 100%;}
+  }
+
+  .body-title {
+      text-decoration: underline;
+  }
+  .features-list-item {
+    font-size: 18px;
+    margin-left: 20px;
+
   }
