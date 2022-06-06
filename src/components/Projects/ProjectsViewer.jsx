@@ -1,11 +1,15 @@
-import React  from 'react'
+import React, {useEffect}  from 'react'
 import "./projectsViewer.scss"
-import { useParams } from 'react-router-dom';
+import { useParams,useLocation } from 'react-router-dom';
 import data from './ProjectData';
 
 
 
 const ProjectsViewer = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, useLocation);
 
   const projectUrl  = useParams().project;
   const projectData = data.Projects.filter(function (projects){return projects.url === projectUrl;})[0];
@@ -13,7 +17,6 @@ const ProjectsViewer = () => {
     return (
     <>
       <div className='display-container'>
-        <img className='display-bg'></img>
         <div className='display-title-container'><h1 className='display-title'>{projectData.title}</h1>
         <div>
           <a className= 'header-link' href={projectData.links.github}>GitHub</a>
@@ -26,10 +29,10 @@ const ProjectsViewer = () => {
         <ul className='display-tech'>{projectData.tech.map(tool => { return (<li className='display-tech-item'>{tool + " "} </li> )})}</ul>
 
         <div className='display-images-container'>
-        <img className='display-img' src={require('../../images/Projects/'+projectData.url.toString()+'/0.jpg')}></img>
-        <img className='display-img'src={require('../../images/Projects/'+projectData.url.toString()+'/1.jpg')}></img>
-        <img className='display-img'src={require('../../images/Projects/'+projectData.url.toString()+'/3.jpg')}></img>
-        <img className='display-img'src={require('../../images/Projects/'+projectData.url.toString()+'/4.jpg')}></img>
+        <img className='display-img' alt="img" src={require('../../images/Projects/'+projectData.url.toString()+'/0.jpg')}></img>
+        <img className='display-img'alt="img"src={require('../../images/Projects/'+projectData.url.toString()+'/1.jpg')}></img>
+        <img className='display-img'alt="img"src={require('../../images/Projects/'+projectData.url.toString()+'/3.jpg')}></img>
+        <img className='display-img'alt="img"src={require('../../images/Projects/'+projectData.url.toString()+'/4.jpg')}></img>
 
         <h1 className='body-title'>Description</h1>
         {projectData.description.map((value, index) => {

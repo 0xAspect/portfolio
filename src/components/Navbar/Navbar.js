@@ -27,7 +27,7 @@ const Navbar = () => {
     <>
       <nav className="nav"> 
         <NavLink to="/" className='nav-link-title' onClick={scrollHandler}>0xAspect <HiCube className="icon" /></NavLink>
-        <div class="nav-menu">
+        <div className="nav-menu">
         <NavLink className='nav-link'   name="hero" to= "/" onClick={scrollHandler}>About Me </NavLink>
         <NavLink className='nav-link'  name="projects" to= "/" onClick={scrollHandler}>Projects </NavLink>
         <NavLink className="nav-link" name="contact" to="/"onClick={scrollHandler}>Contact</NavLink>
