@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className ="bars" onClick={toggle}><FaBars className='burger-menu' /></div>
         
       </nav>
-      {/* {expand === true && <Sidebar toggle={toggle} scrollHandler={scrollHandler}></Sidebar>} */}
+      {expand === true && <Sidebar toggle={toggle} scrollHandler={scrollHandler}></Sidebar>}
     </>
   );
 };
