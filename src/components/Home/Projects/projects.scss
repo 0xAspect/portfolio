@@ -4,10 +4,12 @@ $tint: #034694;
     flex-direction: column;
     background: $tint;
     justify-content: top;
-    align-items: center;
+    align-items: left;
+    padding-left: 15%;
+    padding-right: 15%;
+
     align-items: top;
-    padding: 0 30px;
-    height: 800px;
+    height: 1200px;
     position: relative;
     z-index: 1;
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzI4MjgyOCI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+CjxjaXJjbGUgY3g9IjEwLjUiIGN5PSIxMi41IiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTEuMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg==");
@@ -17,6 +19,8 @@ $tint: #034694;
     text-align: center;
     list-style: none;
     margin-left: 0;
+    max-width: 90%;
+
     display: table;
     padding-bottom: 15px;
     @media screen and (max-width: 768px){
@@ -28,8 +32,8 @@ $tint: #034694;
 
 .projects-h1 {
     color:white ;
-    font-size: 48px;
-    text-align: center;
+    font-size: px;
+    text-align: left;
     
     @media screen and (max-width: 768px){
         font-size: 30px
@@ -47,7 +51,7 @@ $tint: #034694;
 
     color: white;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
 
     @media screen and (max-width: 768px){
         font-size: 24px
