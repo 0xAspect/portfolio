@@ -22,7 +22,7 @@ export class Projects extends Component {
                     <Preview title = "RatDAO - work in progress" link = "/rat-dao" ></Preview>
                 </ul>
             </div>
-            <div className='projects-content' style={{paddingTop: "0px"}}>
+            <div className='projects-content' >
                 <h1 className='projects-h1'> React.js/Web3.js and other projects </h1>
                 <hr/>
                 <p className='projects-p'>live and in-development react/web3.js projects:</p>
