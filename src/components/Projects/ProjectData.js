@@ -40,7 +40,7 @@ let data ={
                 "github": "https://github.com/0xAspect/NibblersSol/blob/main/factoryNFTv2.sol", 
                 "blockscanner": "https://snowtrace.io/address/0x1e6eb10b84a0b79b82ddc42364159f88651a9135",
                 "frontend": "https://avaxrats.xyz",}
-        }{
+        },{
             //Avax Nibblers staking contract data
             url: "nibblers-staking",
             title: "Avax Nibblers Staking Contract",
