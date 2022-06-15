@@ -29,8 +29,8 @@ const ProjectsViewer = () => {
       <div className='display-images-container'>
         <img className='display-img' alt="img" src={require('../../images/Projects/'+projectData.url.toString()+'/0.jpg')}></img>
         <img className='display-img'alt="img"src={require('../../images/Projects/'+projectData.url.toString()+'/1.jpg')}></img>
+        <img className='display-img'alt="img"src={require('../../images/Projects/'+projectData.url.toString()+'/2.jpg')}></img>
         <img className='display-img'alt="img"src={require('../../images/Projects/'+projectData.url.toString()+'/3.jpg')}></img>
-        <img className='display-img'alt="img"src={require('../../images/Projects/'+projectData.url.toString()+'/4.jpg')}></img>
       <h2>{projectData.tagline}</h2>
       <h1 className='body-title'>Description</h1>
         {projectData.description.map((value, index) => {

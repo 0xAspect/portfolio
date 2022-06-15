@@ -24,7 +24,7 @@ let data ={
             //Avax Nibblers staking contract data
             url: "nibblers-farming",
             title: "Avax Nibblers Farming Contract",
-            tagline: "Gameified NFTs on the Avalanche blockchain",
+            tagline: "Avax Nibblers - Idle NFT reward token (ERC), live on the Avalanche blockchain",
             description: [
                 'As part of the Avax Nibblers game I needed to create a passive reward for holding the NFT.', 'This was achieved by creating a contract which keeps track of the level of each NFT and the time since that NFTs rewards were last harvested', 'Users can then claim their rewards in the form of an ERC20 token'],
             tech: ["Solidity", "EVM", "ERC20", "DeFi", "AvalancheGo", "Hardhat", "Gananche", "Javascript", "Ethers.js"],
@@ -32,9 +32,9 @@ let data ={
             "features": 
             ['Dynamic yield calculation', 'modifiable yield calculation', 'ERC20 minting function', 'multiple NFT claim', 'pausability', "ERC721 interoperability", "multiple interfaces with other live smart contracts"]},
             links: {
-                "github": "https://github.com/0xAspect/AvaxNibblers-Minting-Contract/blob/main/factoryNFTv2.sol", 
-                "blockscanner": "https://snowtrace.io/address/0x1e6eb10b84a0b79b82ddc42364159f88651a9135",
-                "frontend": "https://avaxrats.xyz",}
+                "github": "https://github.com/0xAspect/AvaxNibblers-Farming-Contract/blob/main/Trinkets.sol", 
+                "blockscanner": "https://snowtrace.io/address/0x9e67a8333e6b4361f758d3f1509f798af4305dd6",
+                "frontend": "https://avaxrats.xyz/swarm",}
         },{
             //Avax Nibblers staking contract data
             url: "nibblers-staking",
