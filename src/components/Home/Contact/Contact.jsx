@@ -25,7 +25,7 @@ const Contact = () => {
             <div className='contact-content'>
                 <h1 className='contact-h1'> Contact me</h1>
                 <hr/>
-                <form onSubmit={handleSubmit} method="POST" data-netlify="true">
+                <form name="contact-form" method="POST" data-netlify="true">
         <label className='contact-p'>
           Name:
           <input 
