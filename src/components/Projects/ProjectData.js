@@ -17,7 +17,7 @@ let data ={
             ['Split mint and reveal', 'Reward gathering and interfacing with appropriate external contracts', 'On-blockchain level information', 'Amended metadata', 'IPFS compatibility', 'Custom reveal amounts (returning a different metadata setbased on NFT id)', 'Custom max NFTs (up to an upper limit)',
             'Mappings for NFT level and the timestamp of the mint']},
             links: {
-                "github": "https://github.com/0xAspect/NibblersSol/blob/main/factoryNFTv2.sol", 
+                "github": "https://github.com/0xAspect/AvaxNibblers-Minting-Contract/blob/main/factoryNFTv2.sol", 
                 "blockscanner": "https://snowtrace.io/address/0x1e6eb10b84a0b79b82ddc42364159f88651a9135",
                 "frontend": "https://avaxrats.xyz",}
         },{
