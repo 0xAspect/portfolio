@@ -19,7 +19,7 @@ export class Projects extends Component {
                     <Preview title = "Avax Nibblers Minting Contract" link = "/nibblers-minting" bg = {mintImg}></Preview>
                     <Preview title = "Avax Nibblers Farming Contract" link = "/nibblers-farming" bg = {farmImg}></Preview>
                     <Preview title = "Avax Nibblers Staking Contract" link = "/nibblers-staking" bg = {stakeImg}></Preview>
-                    <Preview title = "RatDAO - work in progress" link = "/rat-dao" ></Preview>
+                    <Preview title = "CoinFlip" link = "/coinflip" ></Preview>
                 </ul>
             </div>
             <div className='projects-content' >
@@ -29,7 +29,7 @@ export class Projects extends Component {
                 <ul className='category-preview'> 
                     <Preview title = "Avax Nibblers Metadata" link = "/nibblers-meta" bg = {mintImg}></Preview>
                     <Preview title = "0x Aspect Portfolio website" link = "/nibblers-farming" bg = {farmImg}></Preview>
-                    <Preview title = "blockSimple" link = "/rat-dao" ></Preview>
+                    <Preview title = "Portfolio website" link = "/portfolio" ></Preview>
                 </ul>
                 <SLink     smooth={true}  offset={-70} duration={500} to= "contact" className='contact-button'>Contact </SLink>
 
