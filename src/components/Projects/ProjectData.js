@@ -39,17 +39,17 @@ let data ={
             //Avax Nibblers staking contract data
             url: "nibblers-staking",
             title: "Avax Nibblers Staking Contract",
-            tagline: "Avax Nibblers - Idle NFT reward token (ERC), live on the Avalanche blockchain",
+            tagline: "Avax Nibblers - NFT Leveling and Staking reward token (ERC), live on the Avalanche blockchain",
             description: [
-                'As part of the Avax Nibblers game I needed to create a passive reward for holding the NFT.', 'This was achieved by creating a contract which keeps track of the level of each NFT and the time since that NFTs rewards were last harvested', 'Users can then claim their rewards in the form of an ERC20 token'],
+                'As part of the Avax Nibblers game I needed to create a token which could be used to level the NFTs. This token would be minted to users who staked the (ERC20) reward token from holding the NFT, the idea of this to be to reward users who hold their  NFT holding rewards and align the incentives of the protocol with that of the users.', 'This was achieved by creating a contract which allows users to lock their TRINK tokens.', 'Users can then claim their rewards in the form of the ERC20 NIBBLER token, which can then be used to level up the NFT.'],
             tech: ["Solidity", "EVM", "ERC20", "DeFi", "AvalancheGo", "Hardhat", "Gananche", "Javascript", "Ethers.js"],
-            features: {"description": 'The farming contract is ERC20 compliant however significantly extents the functionality of the standard to include features such as:', 
+            features: {"description": 'The staking and farming contract is ERC20 compliant however significantly extents the functionality of the standard to include features such as:', 
             "features": 
-            ['Dynamic yield calculation', 'modifiable yield calculation', 'ERC20 minting function', 'multiple NFT claim', 'pausability', "ERC721 interoperability", "multiple interfaces with other live smart contracts"]},
+            ['Used to increase the level of an ERC721 NFT', 'Burn on level', 'Dynamic yield calculation', 'modifiable yield calculation', 'ERC20 minting function','Custom stake and withdraw', 'automatic reward on unstake', 'Pausability', "ERC721 and ERC20 interoperability", "multiple interfaces with other live smart contracts"]},
             links: {
-                "github": "https://github.com/0xAspect/NibblersSol/blob/main/factoryNFTv2.sol", 
+                "github": "https://github.com/0xAspect/AvaxNibblers-Staking-Contract/blob/main/Nibbles.sol", 
                 "blockscanner": "https://snowtrace.io/address/0x1e6eb10b84a0b79b82ddc42364159f88651a9135",
-                "frontend": "https://avaxrats.xyz",}
+                "frontend": "https://avaxrats.xyz/stake",}
         }, {
             url: "rat-dao",
             title: "Rat Dao",
