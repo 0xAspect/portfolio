@@ -3,6 +3,7 @@ let data ={
         {
             //Avax Nibblers minting contract data
             url: "nibblers-minting",
+            type: "solidity",
             title: "Avax Nibblers Minting Contract",
             tagline: "Gameified NFTs on the Avalanche blockchain",
             description: [
@@ -23,6 +24,7 @@ let data ={
         },{
             //Avax Nibblers staking contract data
             url: "nibblers-farming",
+            type: "solidity",
             title: "Avax Nibblers Farming Contract",
             tagline: "Avax Nibblers - Idle NFT reward token (ERC), live on the Avalanche blockchain",
             description: [
@@ -38,6 +40,7 @@ let data ={
         },{
             //Avax Nibblers staking contract data
             url: "nibblers-staking",
+            type: "solidity",
             title: "Avax Nibblers Staking Contract",
             tagline: "Avax Nibblers - NFT Leveling and Staking reward token (ERC), live on the Avalanche blockchain",
             description: [
@@ -51,10 +54,35 @@ let data ={
                 "blockscanner": "https://snowtrace.io/address/0x1e6eb10b84a0b79b82ddc42364159f88651a9135",
                 "frontend": "https://avaxrats.xyz/stake",}
         }, {
-            url: "rat-dao",
-            title: "Rat Dao",
-            description: "Staking contract for Avax Nibblers",
-            tech: ["Solidity", "EVM", "Truffle", "Hardhat", "Gananche", "Javascript", "Ethers.js"],
+            url: "coinflip",
+            type: "solidity",
+            title: "Coinflip",
+            tagline: "Chainlink project",
+            description: [
+                'TBC'],
+            tech: ["Solidity", "EVM", "ERC20", "DeFi", "AvalancheGo", "Hardhat", "Gananche", "Javascript", "Ethers.js"],
+            features: {"description": 'details TBC', 
+            "features": 
+            ['details TBC']},
+            links: {
+                "github": "https://github.com/0xAspect/", 
+                "blockscanner": "https://snowtrace.io/",
+                "frontend": "https://google.com"}
+        }, {
+            url: "nibblers-meta",
+            type: "other",
+            title: "Nibblers Metadata",
+            tagline: "Meta data for NFT",
+            description: [
+                'TBC'],
+            tech: ["Python", "Javascript", "IPFS", "NFT"],
+            features: {"description": 'details TBC', 
+            "features": 
+            ['details TBC']},
+            links: {
+                "github": "https://github.com/0xAspect/", 
+                "blockscanner": "https://snowtrace.io/",
+                "frontend": "www.avaxrats.xyz"}
         }
     ]
 } 

@@ -14,6 +14,7 @@ const ProjectsViewer = () => {
   const projectUrl  = useParams().project;
   const projectData = data.Projects.filter(function (projects){return projects.url === projectUrl;})[0];
 
+    console.log(projectData);
     return (
     <>
       <div className='display-container'>

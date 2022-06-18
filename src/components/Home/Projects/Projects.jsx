@@ -28,8 +28,8 @@ export class Projects extends Component {
                 <p className='projects-p'>live and in-development react/web3.js projects:</p>
                 <ul className='category-preview'> 
                     <Preview title = "Avax Nibblers Metadata" link = "/nibblers-meta" bg = {mintImg}></Preview>
-                    <Preview title = "0x Aspect Portfolio website" link = "/nibblers-farming" bg = {farmImg}></Preview>
-                    <Preview title = "Portfolio website" link = "/portfolio" ></Preview>
+                    <Preview title = "Avax Nibblers Front End" link = "/nibblers-website" ></Preview>
+                    <Preview title = "0x Aspect Portfolio website" link = "/portfolio-website" bg = {farmImg}></Preview>
                 </ul>
                 <SLink     smooth={true}  offset={-70} duration={500} to= "contact" className='contact-button'>Contact </SLink>
 
