@@ -12,10 +12,6 @@ const Contact = () => {
     setInputs(values => ({...values, [name]: value}))
     console.log(inputs);
   }
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(inputs.email);
-  }
 
     return (
       <>

@@ -93,14 +93,32 @@ input, select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    border-radius: 80px;
+    background: $tint;
+    white-space: nowrap;
+    padding: 19px 48px;
+    margin-top: 10px;
+    margin-left: 30%;
     color: white;
-    padding: 12px 20px;
+    outline: none;
     border: none;
-    border-radius: 4px;
-    width: 50%;
     cursor: pointer;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: 40%;
+    transition:  all 0.2s ease-in-out;
+    font-size: larger;
+    &:hover {
+        transition:  all 0.2s ease-in-out;
+        background-color: black;
+        color: white;
+    }
+    @media screen and (max-width: 768px){
+        width: 60%;
+        margin-left: 20%;
+    
+    }
   }
   textarea {
     height: 100px;

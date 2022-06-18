@@ -3,11 +3,11 @@ $tint: #034694;
     display: flex ;
     flex-direction: column;
     background: $tint;
-    justify-content: top;
+    // justify-content: top;
     align-items: left;
     padding-left: 15%;
     padding-right: 15%;
-
+    justify-content: center;
     align-items: top;
     height: 800px;
     position: relative;
